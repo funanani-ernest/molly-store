@@ -1,0 +1,7 @@
+#carouselExampleCaptions{
+    margin-top: 20px;
+}
+
+.carousel-item > img{
+    height: 100vh;
+}
