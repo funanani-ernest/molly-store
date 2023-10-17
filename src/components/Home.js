@@ -1,23 +1,9 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import "./Home.css";
-
-import IMAGE1 from "../assests/IMAGE1.jpg";
 const Home = () => {
   return (
     <div className="home">
-      <div className="navbar">
-        <h1 className="store-name"> Molly Online Store</h1>
-        <div className="details">
-          <div className="det-info">
-            <span>Contact Us</span>
-            <span>Products</span>
-            <span>About Us</span>
-          </div>
-          <FontAwesomeIcon icon={faShoppingCart} />
-        </div>
-      </div>
+      
 
       <div className="home-content">
         <span>

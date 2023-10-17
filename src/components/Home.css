@@ -1,17 +1,4 @@
-.navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
-  margin: 0 28px;
-}
-.left-nav-cont {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
+/* /* Common styles for all screen sizes */
 .home {
   background-image: url("../assests/IMAGE10.jpg");
   background-size: cover;
@@ -22,47 +9,55 @@
   height: 70vh;
 }
 
-
-.store-name {
-  padding: 10px;
-  border: 1px solid grey;
-  border-radius: 5px;
-  color: rgb(92, 60, 60);
-}
-.home-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5%;
-}
 .home-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center text */
+}
+
+.home-content span {
+  margin-top: 140px;
   font-size: 28px;
   color: rgb(92, 60, 60);
+  margin-bottom: 26px;
 }
-.home-content > p {
-  margin-top: 14px;
-  padding: 14px;
+
+.home-content p a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
   border-radius: 50px;
   background-color: #f8adad;
 }
-.home-content > p:hover {
-    background-color:rgb(130, 238, 48);
-  }
-.details {
-  display: flex;
-  flex-direction: row;
-  font-size: 20px;
-  color: rgb(92, 60, 60);
+
+.home-content p a:hover {
+  background-color: rgb(130, 238, 48);
 }
-.det-info {
-  margin-right: 20px;
-}
-.det-info > span {
-  margin: 0 5px;
-}
-.det-info :hover {
-    color: #fa9a9a;
+
+
+
+/* Media Queries for Tablet */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
   }
 
+  .details {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 576px) {
+  .navbar {
+    margin: 0;
+  }
+
+  .details {
+    font-size: 16px;
+  }
+}
