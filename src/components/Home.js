@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "./Home.css";
+import ProductsContainer from "./ProductsContainer";
+import AboutUs from "./AboutUs";
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 const Home = () => {
   return (
     <div className="home">
-      
-
+  
       <div className="home-content">
         <span>
           Welcome to Molly's Online Store, where elegance meets affordability.
@@ -15,9 +17,11 @@ const Home = () => {
           is evident in <br />
           every piece we present to you.
         </span>
-        <p>
-          <a>SHOP NOW</a>
-        </p>
+        <NavLink to="/productsContainer" className="navlink-customs">
+        <p>SHOP NOW</p>
+        </NavLink>
+         
+      
       </div>
     </div>
   );
