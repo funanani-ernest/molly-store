@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 const Home = () => {
   return (
     <div className="home">
-  
       <div className="home-content">
         <span>
           Welcome to Molly's Online Store, where elegance meets affordability.
@@ -20,8 +19,6 @@ const Home = () => {
         <NavLink to="/productsContainer" className="navlink-customs">
         <p>SHOP NOW</p>
         </NavLink>
-         
-      
       </div>
     </div>
   );
