@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./Home.css";
-import ProductsContainer from "./ProductsContainer";
-import AboutUs from "./AboutUs";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 const Home = () => {
   return (
